@@ -1,0 +1,21 @@
+{
+  "name": "@minato-css/root",
+  "version": "0.1.0",
+  "description": "Simple CSS form controls",
+  "main": "dist/index.css",
+  "repository": "https://github.com/3c1u/minato-css",
+  "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run --parallel build",
+    "serve": "lerna run --stream --scope minato-css-demo serve",
+    "bootstrap": "lerna bootstrap"
+  }
+}

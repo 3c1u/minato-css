@@ -1,0 +1,30 @@
+{
+  "name": "minato-css",
+  "version": "0.1.0",
+  "description": "Simple CSS form controls.",
+  "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
+  "homepage": "https://github.com/3c1u/minato-css#readme",
+  "license": "MIT",
+  "main": "dist/index.css",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3c1u/minato-css.git"
+  },
+  "scripts": {
+    "build": "node-sass --output-style compressed --include-path src src/minato.scss dist/index.css",
+    "watch": "nodemon -e scss -x \"lerna run build\""
+  },
+  "bugs": {
+    "url": "https://github.com/3c1u/minato-css/issues"
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
