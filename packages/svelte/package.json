@@ -1,0 +1,30 @@
+{
+  "name": "@minato-css/svelte",
+  "version": "0.1.0",
+  "description": "Svelte component for minato.css.",
+  "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
+  "homepage": "https://github.com/3c1u/minato-css#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3c1u/minato-css.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/3c1u/minato-css/issues"
+  },
+  "devDependencies": {
+    "sass": "^1.32.7",
+    "svelte": "^3.32.3"
+  }
+}

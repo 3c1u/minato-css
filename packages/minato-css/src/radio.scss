@@ -1,0 +1,102 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@import "./variables.scss";
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.radio-label {
+  margin-left: 5px;
+  user-select: none;
+  color: $minato-typo-primary;
+}
+
+.radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid $minato-check-border;
+  border-radius: 10px;
+  transition: all 200ms ease;
+  appearance: none;
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
+
+  &:not(:disabled) {
+    box-shadow: 0 3px 3px 0 $minato-card-shadow;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    content: "";
+    border-radius: 5px;
+    background: white;
+    opacity: 0;
+    transition: all 400ms $minato-bounce;
+    transform: scale(0.1);
+  }
+
+  &:checked {
+    background-color: $minato-primary;
+    border: none;
+
+    &:not(:disabled) {
+      box-shadow: 0 3px 5px 0 rgba(saturate($minato-primary, 10%), 0.3);
+    }
+
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &:active:not(:checked):not(:disabled) {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    content: "";
+    border-radius: 10px;
+    opacity: 0;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+    transition-property: box-shadow, opacity;
+  }
+
+  &:focus-visible::before {
+    opacity: 1;
+    box-shadow: 0 0 1px 3px $minato-primary;
+  }
+}

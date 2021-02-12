@@ -1,0 +1,82 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@import "./variables.scss";
+
+.select {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  font-size: 14px;
+  color: $minato-typo-primary;
+  background: $minato-select-bg;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:not(:disabled) {
+    box-shadow: 0 8px 8px 0 $minato-card-shadow;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.selector {
+  position: relative;
+  width: 300px;
+  margin: 10px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    content: "";
+    border-radius: 5px;
+    opacity: 0;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+    transition-property: box-shadow, opacity;
+  }
+
+  &:hover:not(.disabled)::before {
+    opacity: 0.5;
+    box-shadow: 0 0 1px 3px $minato-primary;
+  }
+
+  &:focus-within:not(.disabled)::before {
+    opacity: 1;
+    box-shadow: 0 0 1px 3px $minato-primary;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -4px;
+    font-family: 'Arial Unicode MS', 'Arial', sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 8px;
+    color: $minato-typo-secondary;
+    content: "∨";
+    transform: scaleX(2.5);
+  }
+}

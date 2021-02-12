@@ -1,5 +1,5 @@
 {
-  "name": "minato-css-demo",
+  "name": "@minato-css/minato-css-demo",
   "version": "0.1.0",
   "description": "> TODO: description",
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "vue": "^3.0.5",
-    "minato-css": "^0.1.0"
+    "@minato-css/minato-css": "^0.1.0"
   }
 }

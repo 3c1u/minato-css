@@ -15,7 +15,10 @@
   ],
   "scripts": {
     "build": "lerna run --parallel build",
-    "serve": "lerna run --stream --scope minato-css-demo serve",
+    "lint": "lerna run --parallel lint",
+    "lint:fix": "lerna run --parallel lint:fix",
+    "serve": "lerna run --stream --scope @minato-css/minato-css-demo serve",
+    "serve:svelte": "lerna run --stream --scope @minato-css/svelte-demo serve",
     "bootstrap": "lerna bootstrap"
   }
 }

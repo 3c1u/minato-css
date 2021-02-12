@@ -1,30 +1,42 @@
 {
-  "name": "minato-css",
+  "name": "@minato-css/minato-css",
   "version": "0.1.0",
   "description": "Simple CSS form controls.",
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "homepage": "https://github.com/3c1u/minato-css#readme",
   "license": "MIT",
-  "main": "dist/index.css",
+  "main": "index.js",
+  "module": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "src": "src",
+    "dist": "dist"
   },
   "files": [
-    "lib"
+    "src",
+    "dist",
+    "index.js"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3c1u/minato-css.git"
   },
   "scripts": {
-    "build": "node-sass --output-style compressed --include-path src src/minato.scss dist/index.css",
-    "watch": "nodemon -e scss -x \"lerna run build\""
+    "build": "sass src/minato.scss dist/index.css",
+    "lint": "stylelint src/**.scss",
+    "lint:fix": "yarn lint --fix",
+    "watch": "nodemon -e scss -x \"yarn build\""
   },
   "bugs": {
     "url": "https://github.com/3c1u/minato-css/issues"
   },
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "modern-normalize": "^1.0.0",
+    "sass": "^1.32.7",
+    "stylelint": "^13.10.0"
+  },
+  "devDependencies": {
+    "stylelint": "^13.10.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.19.0"
   }
 }

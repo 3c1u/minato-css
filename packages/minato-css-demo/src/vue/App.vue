@@ -68,6 +68,36 @@ div.container
     button.button.primary(type='submit') Submit
 </template>
 <script lang="ts">
-import "minato-css";
+import '@minato-css/minato-css';
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+$typo-secondary: #888;
+$typo-tertiary: #aab;
+
+.heading {
+  color: $typo-tertiary;
+  text-shadow: 0 -1px 0 $typo-secondary;
+  font-size: 24px;
+}
+
+.section {
+  color: $typo-secondary;
+  font-size: 18px;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 20px 20px 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddfe5;
+  font-family: "Open Sans", sans-serif;
+}
+</style>
