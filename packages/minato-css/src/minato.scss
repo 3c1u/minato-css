@@ -15,3 +15,7 @@
 @import "./text-input.scss";
 @import "./button.scss";
 @import "./select.scss";
+
+body {
+    background-color: $minato-background-color;
+}

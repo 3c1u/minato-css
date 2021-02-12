@@ -1,71 +1,71 @@
 <template lang="pug">
 div.container
   h2.section Text Input
-  div.text-input-container
-    input.text-input(type='text' placeholder='Text')
-  div.text-input-container
-    input.text-input(type='email' placeholder='Email')
-  div.text-input-container
-    input.text-input(type='password' placeholder='Password')
-  div.text-input-container
-    input.text-input(type='text' placeholder='Disabled' disabled)
+  div.mcss-text-input-container
+    input.mcss-text-input(type='text' placeholder='Text')
+  div.mcss-text-input-container
+    input.mcss-text-input(type='email' placeholder='Email')
+  div.mcss-text-input-container
+    input.mcss-text-input(type='password' placeholder='Password')
+  div.mcss-text-input-container
+    input.mcss-text-input(type='text' placeholder='Disabled' disabled)
   h2.section Checkbox
-  div.checkbox-group
-    label.checkbox-container
-      input.checkbox(type='checkbox')
-      span.checkbox-label Check me!
-    label.checkbox-container
-      input.checkbox(type='checkbox')
-      span.checkbox-label Check me!
-    label.checkbox-container
-      input.checkbox(type='checkbox' disabled)
-      span.checkbox-label Disabled
-    label.checkbox-container
-      input.checkbox(type='checkbox' disabled checked)
-      span.checkbox-label Disabled (checked)
+  div.mcss-checkbox-group
+    label.mcss-checkbox-container
+      input.mcss-checkbox(type='checkbox')
+      span.mcss-checkbox-label Check me!
+    label.mcss-checkbox-container
+      input.mcss-checkbox(type='checkbox')
+      span.mcss-checkbox-label Check me!
+    label.mcss-checkbox-container
+      input.mcss-checkbox(type='checkbox' disabled)
+      span.mcss-checkbox-label Disabled
+    label.mcss-checkbox-container
+      input.mcss-checkbox(type='checkbox' disabled checked)
+      span.mcss-checkbox-label Disabled (checked)
   h2.section Switch
-  div.checkbox-group
-    label.switch-container
-      input.switch(type='checkbox')
-      span.switch-label Do not disturb
-    label.switch-container
-      input.switch(type='checkbox' disabled)
-      span.switch-label Disabled
-    label.switch-container
-      input.switch(type='checkbox' disabled checked)
-      span.switch-label Disabled (checked)
+  div.mcss-checkbox-group
+    label.mcss-switch-container
+      input.mcss-switch(type='checkbox')
+      span.mcss-switch-label Do not disturb
+    label.mcss-switch-container
+      input.mcss-switch(type='checkbox' disabled)
+      span.mcss-switch-label Disabled
+    label.mcss-switch-container
+      input.mcss-switch(type='checkbox' disabled checked)
+      span.mcss-switch-label Disabled (checked)
   h2.section Radio Button 
-  div.checkbox-group
-    label.radio-container
-      input.radio(type='radio' name='a' value='10')
-      span.radio-label Katagiri Nanase
-    label.radio-container
-      input.radio(type='radio' name='a' value='20')
-      span.radio-label Watarai Hinami
-    label.radio-container
-      input.radio(type='radio' name='a' value='30')
-      span.radio-label Hotori Misaki
-    label.radio-container
-      input.radio(type='radio' name='a' value='40' disabled)
-      span.radio-label Kotoyose Fumino
-    label.radio-container
-      input.radio(type='radio' name='b' value='40' disabled checked)
-      span.radio-label Tachibana Asane
+  div.mcss-checkbox-group
+    label.mcss-radio-container
+      input.mcss-radio(type='radio' name='a' value='10')
+      span.mcss-radio-label Katagiri Nanase
+    label.mcss-radio-container
+      input.mcss-radio(type='radio' name='a' value='20')
+      span.mcss-radio-label Watarai Hinami
+    label.mcss-radio-container
+      input.mcss-radio(type='radio' name='a' value='30')
+      span.mcss-radio-label Hotori Misaki
+    label.mcss-radio-container
+      input.mcss-radio(type='radio' name='a' value='40' disabled)
+      span.mcss-radio-label Kotoyose Fumino
+    label.mcss-radio-container
+      input.mcss-radio(type='radio' name='b' value='40' disabled checked)
+      span.mcss-radio-label Tachibana Asane
   h2.section Dropdown
-  div.selector
-    select.select
-      option.option(disabled value=0 selected) Select
-      option.option(value=1) Reizeiin Tohka
-      option.option(value=2) Tadasugawa Rei
-      option.option(value=3) Onabuta Ikuko
-  div.selector.disabled
-    select.select(disabled)
-      option.option(disabled value=0 selected) Disabled
-  h2.section Buttons
-  div.button-group
-    button.button(type='reset') Reset
-    button.button(type='button' disabled) Disabled
-    button.button.primary(type='submit') Submit
+  div.mcss-selector
+    select.mcss-select
+      option.mcss-option(disabled value=0 selected) Select
+      option.mcss-option(value=1) Reizeiin Tohka
+      option.mcss-option(value=2) Tadasugawa Rei
+      option.mcss-option(value=3) Onabuta Ikuko
+  div.mcss-selector.mcss-disabled
+    select.mcss-select(disabled)
+      option.mcss-option(disabled value=0 selected) Disabled
+  h2.mcss-section Buttons
+  div.mcss-button-group
+    button.mcss-button(type='reset') Reset
+    button.mcss-button(type='button' disabled) Disabled
+    button.mcss-button(type='submit' data-primary) Submit
 </template>
 <script lang="ts">
 import '@minato-css/minato-css';

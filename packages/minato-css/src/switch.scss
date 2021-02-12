@@ -9,20 +9,23 @@
  */
 
 @import "./variables.scss";
+@import "./utils.scss";
 
-.switch-container {
+.mcss-switch-container {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.switch-label {
+.mcss-switch-label {
   margin-left: 10px;
   user-select: none;
   color: $minato-typo-primary;
 }
 
-.switch {
+.mcss-switch {
+  @include input-common;
+
   position: relative;
   width: 50px;
   height: 30px;
@@ -30,17 +33,8 @@
   border: none;
   border-radius: 15px;
   transition: all 200ms ease;
-  appearance: none;
-  /* stylelint-disable-next-line */
-  -webkit-appearance: none;
-
-  &:not(:disabled) {
-    cursor: pointer;
-    box-shadow: 0 3px 3px 0 $minato-card-shadow;
-  }
 
   &:disabled {
-    opacity: 0.6;
     filter: grayscale(70%);
   }
 
@@ -54,10 +48,6 @@
     border-radius: 13px;
     background: white;
     transition: all 400ms cubic-bezier(0.38, 1.46, 0.49, 0.94);
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:checked {

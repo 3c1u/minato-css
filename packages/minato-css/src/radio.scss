@@ -9,20 +9,23 @@
  */
 
 @import "./variables.scss";
+@import "./utils.scss";
 
-.radio-container {
+.mcss-radio-container {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.radio-label {
+.mcss-radio-label {
   margin-left: 5px;
   user-select: none;
   color: $minato-typo-primary;
 }
 
-.radio {
+.mcss-radio {
+  @include input-common;
+
   position: relative;
   width: 20px;
   height: 20px;
@@ -30,18 +33,6 @@
   border: 1px solid $minato-check-border;
   border-radius: 10px;
   transition: all 200ms ease;
-  appearance: none;
-  /* stylelint-disable-next-line */
-  -webkit-appearance: none;
-
-  &:not(:disabled) {
-    box-shadow: 0 3px 3px 0 $minato-card-shadow;
-    cursor: pointer;
-  }
-
-  &:disabled {
-    opacity: 0.6;
-  }
 
   &:focus {
     outline: none;
