@@ -1,6 +1,3 @@
 <div class="mcss-button-group">
-    <slot></slot>
+  <slot />
 </div>
-<script>
-import '@minato-css/minato-css'
-</script>

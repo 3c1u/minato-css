@@ -1,8 +1,11 @@
 import svelte from 'rollup-plugin-svelte'
-import { scss } from 'svelte-preprocess'
+import { typescript, scss } from 'svelte-preprocess'
 
 export default {
   plugins: [svelte({
-    preprocess: [scss()],
+    preprocess: [
+      typescript({ tsconfigFile: '../../tsconfig.json' }),
+      scss()
+    ],
   })]
 }
