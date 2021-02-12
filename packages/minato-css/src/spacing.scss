@@ -1,0 +1,34 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@mixin mx($name, $unit) {
+  .mcss-mx-#{$name} {
+    margin-left: $unit;
+    margin-right: $unit;
+  }
+}
+  
+@mixin my($name, $unit) {
+  .mcss-my-#{$name} {
+    margin-top: $unit;
+    margin-bottom: $unit;
+  }
+}
+
+@mixin m($name, $unit) {
+  @include mx($name, $unit);
+  @include my($name, $unit);
+}
+
+@include m('auto', $minato-unit-auto);
+@include m('1', $minato-unit-1);
+@include m('2', $minato-unit-2);
+@include m('4', $minato-unit-4);
+@include m('8', $minato-unit-8);

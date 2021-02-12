@@ -1,0 +1,31 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+.mcss-typo-primary {
+  &[data-typo='secondary'] {
+    color: $minato-typo-secondary;
+  }
+
+  &[data-typo='tertiary'] {
+    color: $minato-typo-tertiary;
+  }
+}
+
+h1 {
+  font-size: $minato-unit-8;
+}
+
+h2 {
+  font-size: $minato-unit-6;
+}
+
+h3, h4, h5, h6 {
+  font-size: $minato-unit-4;
+}

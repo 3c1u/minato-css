@@ -1,9 +1,19 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
 @mixin input-common {
   appearance: none;
   /* stylelint-disable-next-line */
   -webkit-appearance: none;
 
-  &:not(:disabled) {
+  &:not(:disabled):not([data-no-raise]) {
     box-shadow: 0 $minato-unit-2 $minato-unit-2 0 $minato-card-shadow;
   }
 

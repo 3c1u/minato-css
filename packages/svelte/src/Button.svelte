@@ -4,6 +4,7 @@ const dispatch = createEventDispatcher()
 
 export let primary: boolean | null = null
 export let danger: boolean | null = null
+export let raise: boolean = true
 export let type: string = 'button'
 
 const handleClick = () => {
@@ -15,6 +16,7 @@ const handleClick = () => {
   class="mcss-button"
   data-danger={danger}
   data-primary={primary}
+  data-no-raise={raise ? undefined : true}
   type={type}
   on:click={handleClick}
 >

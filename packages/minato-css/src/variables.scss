@@ -19,14 +19,15 @@ $minato-danger-contrast: #fff;
 $minato-error: $minato-danger;
 $minato-select-bg: white;
 $minato-check-border: #cfd1da;
-$minato-card-shadow: #d3d4df;
-$minato-card-bg: white;
+$minato-card-shadow: var(--minato-shadow-color);
+$minato-card-bg: #f4f6fa;
 $minato-switch-off: #aab;
 $minato-switch-border: #aaa;
 $minato-switch-on: #3e5;
 $minato-switch-on-glow: rgba(#7fb, 0.5);
 $minato-bounce: cubic-bezier(0.29, 1.86, 0.2, 0.9);
 
+$minato-unit-auto: auto;
 $minato-unit-p: 1px;
 $minato-unit-q: 0.0625em;
 $minato-unit-h: 0.125em;
@@ -44,4 +45,7 @@ $minato-unit-16: 4em;
 
 html {
   font-size: 14px;
+  color: $minato-typo-primary;
+
+  --minato-shadow-color: #d3d4df;
 }

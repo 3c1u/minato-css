@@ -8,13 +8,17 @@
  * http://opensource.org/licenses/mit-license.php
  */
 
+
 @import "./variables.scss";
+@import "./card.scss";
 @import "./checkbox.scss";
 @import "./switch.scss";
 @import "./radio.scss";
 @import "./text-input.scss";
 @import "./button.scss";
 @import "./select.scss";
+@import "./spacing.scss";
+@import "./typography.scss";
 
 body {
     background-color: $minato-background-color;
