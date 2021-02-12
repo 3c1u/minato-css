@@ -1,0 +1,18 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@import "./variables.scss"; 
+
+.mcss-card {
+  margin: $minato-unit-8;
+  padding: $minato-unit-1;
+  background-color: $minato-card-bg;
+  border-radius: $minato-unit-1h;
+}

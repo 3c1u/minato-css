@@ -46,11 +46,11 @@
 .mcss-checkbox-container {
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: $minato-unit-2;
 }
 
 .mcss-checkbox-label {
-  margin-left: 5px;
+  margin-left: $minato-unit-3;
   user-select: none;
   color: $minato-typo-primary;
 }
@@ -59,11 +59,11 @@
   @include input-common;
 
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: $minato-unit-6;
+  height: $minato-unit-6;
   background-color: white;
   border: 1px solid $minato-check-border;
-  border-radius: 5px;
+  border-radius: $minato-unit-1;
   transition: all 200ms ease;
 
   &:not(:disabled) {
@@ -72,10 +72,10 @@
 
   &::after {
     position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 18px;
-    height: 18px;
+    top: $minato-unit-h;
+    left: $minato-unit-h;
+    width: $minato-unit-4 + $minato-unit-1;
+    height: $minato-unit-4 + $minato-unit-1;
     content: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><g data-name="Layer 2"><g data-name="checkmark"><rect width="24" height="24" opacity="0"/><path d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39 8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33z"/></g></g></svg>');
     opacity: 0;
     transition: all 200ms $minato-bounce;
@@ -90,7 +90,7 @@
     border: none;
 
     &:not(:disabled) {
-      box-shadow: 0 3px 5px 0 rgba(saturate($minato-primary, 10%), 0.3);
+      box-shadow: 0 $minato-unit-1 $minato-unit-2 0 rgba(saturate($minato-primary, 10%), 0.3);
     }
 
     &::after {

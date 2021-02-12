@@ -14,11 +14,11 @@
 .mcss-radio-container {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: $minato-unit-2;
 }
 
 .mcss-radio-label {
-  margin-left: 5px;
+  margin-left: $minato-unit-3;
   user-select: none;
   color: $minato-typo-primary;
 }
@@ -27,11 +27,11 @@
   @include input-common;
 
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: $minato-unit-6;
+  height: $minato-unit-6;
   background-color: white;
   border: 1px solid $minato-check-border;
-  border-radius: 10px;
+  border-radius: $minato-unit-3;
   transition: all 200ms ease;
 
   &:focus {
@@ -40,12 +40,12 @@
 
   &::after {
     position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 8px;
-    height: 8px;
+    top: $minato-unit-1;
+    left: $minato-unit-1;
+    width: $minato-unit-4;
+    height: $minato-unit-4;
     content: "";
-    border-radius: 5px;
+    border-radius: $minato-unit-2;
     background: white;
     opacity: 0;
     transition: all 400ms $minato-bounce;
@@ -57,12 +57,12 @@
     border: none;
 
     &:not(:disabled) {
-      box-shadow: 0 3px 5px 0 rgba(saturate($minato-primary, 10%), 0.3);
+      box-shadow: 0 $minato-unit-1 $minato-unit-2 0 rgba(saturate($minato-primary, 10%), 0.3);
     }
 
     &::after {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(0.7);
     }
   }
 

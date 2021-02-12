@@ -15,13 +15,13 @@
   @include input-common;
 
   width: 100%;
-  height: 40px;
-  padding: 8px;
-  font-size: 14px;
+  height: $minato-unit-12;
+  padding: $minato-unit-2;
+  font-size: $minato-unit-4;
   color: $minato-typo-primary;
   background: $minato-select-bg;
   border: none;
-  border-radius: 5px;
+  border-radius: $minato-unit-1h;
 
   &:focus {
     outline: none;
@@ -30,21 +30,21 @@
 
 .mcss-selector {
   position: relative;
-  width: 300px;
-  margin: 10px;
+  margin: $minato-unit-3;
 
   &::after {
     position: absolute;
     top: 50%;
-    right: 20px;
-    margin-top: -4px;
+    right: $minato-unit-8;
+    margin-top: -$minato-unit-1;
     font-family: 'Arial Unicode MS', 'Arial', sans-serif;
-    font-size: 8px;
+    font-size: $minato-unit-2;
     font-weight: bold;
-    line-height: 8px;
+    line-height: $minato-unit-2;
     color: $minato-typo-secondary;
     content: "∨";
     transform: scaleX(2.5);
+    pointer-events: none;
   }
 
   @include glow-before-h-fw;

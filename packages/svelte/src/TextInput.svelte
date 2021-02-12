@@ -1,8 +1,8 @@
-<script>
-  export let type = "text";
-  export let placeholder = null;
+<script lang="ts">
+export let type: string = 'text'
+export let placeholder: string | undefined = undefined
 </script>
 
 <div class="mcss-text-input-container">
-  <input {type} {placeholder} class="mcss-text-input" />
+  <input type={type} placeholder={placeholder} class="mcss-text-input" />
 </div>

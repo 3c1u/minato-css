@@ -14,12 +14,32 @@ $minato-typo-secondary: #888;
 $minato-typo-tertiary: #aab;
 $minato-primary: #4f86ef;
 $minato-primary-contrast: #fff;
-$minato-error: #fc197c;
+$minato-danger: #fc197c;
+$minato-danger-contrast: #fff;
+$minato-error: $minato-danger;
 $minato-select-bg: white;
 $minato-check-border: #cfd1da;
 $minato-card-shadow: #d3d4df;
+$minato-card-bg: white;
 $minato-switch-off: #aab;
 $minato-switch-border: #aaa;
 $minato-switch-on: #3e5;
 $minato-switch-on-glow: rgba(#7fb, 0.5);
 $minato-bounce: cubic-bezier(0.29, 1.86, 0.2, 0.9);
+
+$minato-unit-p: 1px;
+$minato-unit-h: 0.125em;
+$minato-unit-1: 0.25em;
+$minato-unit-1h: 0.375em;
+$minato-unit-2: 0.50em;
+$minato-unit-3: 0.75em;
+$minato-unit-4: 1em;
+$minato-unit-6: 1.5em;
+$minato-unit-8: 2em;
+$minato-unit-12: 3em;
+$minato-unit-14: 3.5em;
+$minato-unit-16: 4em;
+
+html {
+  font-size: 14px;
+}

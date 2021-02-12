@@ -12,8 +12,16 @@
 @import "./utils.scss";
 
 .mcss-button-group {
+  display: flex;
+  flex-direction: row;
+  margin: $minato-unit-2;
+
   > * {
-    margin: 5px;
+    margin: $minato-unit-2;
+  }
+
+  .mcss-spacing {
+    flex: 1;
   }
 }
 
@@ -22,15 +30,15 @@
   @include glow-before-h-fv;
 
   position: relative;
-  height: 40px;
+  height: $minato-unit-12;
   background: white;
   border: none;
   box-sizing: border-box;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: $minato-unit-3 $minato-unit-4;
+  font-size: $minato-unit-4;
   font-weight: 500;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: $minato-unit-1h;
   outline: none;
   transition-timing-function: $minato-bounce;
   transition-duration: 500ms;
@@ -45,5 +53,10 @@
   &[data-primary] {
     background: $minato-primary;
     color: $minato-primary-contrast;
+  }
+
+  &[data-danger] {
+    background: $minato-danger;
+    color: $minato-danger-contrast;
   }
 }
