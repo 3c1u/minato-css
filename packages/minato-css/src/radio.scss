@@ -27,8 +27,8 @@
   @include input-common;
 
   position: relative;
-  width: $minato-unit-6;
-  height: $minato-unit-6;
+  width: $minato-unit-5;
+  height: $minato-unit-5;
   background-color: white;
   border: 1px solid $minato-check-border;
   border-radius: $minato-unit-3;
@@ -42,8 +42,8 @@
     position: absolute;
     top: $minato-unit-1;
     left: $minato-unit-1;
-    width: $minato-unit-4;
-    height: $minato-unit-4;
+    width: $minato-unit-3;
+    height: $minato-unit-3;
     content: "";
     border-radius: $minato-unit-2;
     background: white;
@@ -62,7 +62,7 @@
 
     &::after {
       opacity: 1;
-      transform: scale(0.7);
+      transform: scale(0.7); // for smooth bounce animation
     }
   }
 
