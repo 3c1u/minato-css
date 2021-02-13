@@ -58,5 +58,6 @@
   &[data-danger] {
     background: $minato-danger;
     color: $minato-danger-contrast;
+    --minato-glow-color: #{$minato-danger};
   }
 }
