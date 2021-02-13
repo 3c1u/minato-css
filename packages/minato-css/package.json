@@ -21,6 +21,7 @@
     "url": "git+https://github.com/3c1u/minato-css.git"
   },
   "scripts": {
+    "install": "yarn build",
     "build": "sass src/minato.scss dist/index.css",
     "lint": "stylelint src/**.scss",
     "lint:fix": "yarn lint --fix",
