@@ -67,7 +67,7 @@
   &:not(:disabled):focus-visible::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
-    animation: 1s linear infinite mcss-focusring-animation;
+    animation: 2s linear infinite mcss-focusring-animation;
   }
 }
 
@@ -77,6 +77,7 @@
   &:not([data-disabled]):focus-within::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
+    animation: 2s linear infinite mcss-focusring-animation;
   }
 }
 
@@ -91,7 +92,7 @@
   &:not(:disabled):focus-visible::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
-    animation: 1s linear infinite mcss-focusring-animation;
+    animation: 2s linear infinite mcss-focusring-animation;
   }
 }
 
@@ -106,20 +107,20 @@
   &:not([data-disabled]):focus-within::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
-    animation: 5s ease infinite mcss-focusring-animation;
+    animation: 2s ease infinite mcss-focusring-animation;
   }
 }
 
 @keyframes mcss-focusring-animation {
   0% {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   
   100% {
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }

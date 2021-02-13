@@ -27,11 +27,11 @@
   @include glow-before-fv;
 
   position: relative;
-  width: $minato-unit-14 + $minato-unit-2;
-  height: $minato-unit-8 + $minato-unit-2;
+  width: $minato-unit-14;
+  height: $minato-unit-8;
   background-color: $minato-switch-off;
   border: none;
-  border-radius: $minato-unit-8 + $minato-unit-2;
+  border-radius: $minato-unit-8;
   transition: all 200ms ease;
 
   &:disabled {
@@ -39,15 +39,15 @@
   }
 
   &::before {
-    border-radius: $minato-unit-8 + $minato-unit-2;
+    border-radius: $minato-unit-8;
   }
 
   &::after {
     position: absolute;
     top: $minato-unit-1;
     left: $minato-unit-1;
-    width: $minato-unit-8;
-    height: $minato-unit-8;
+    width: $minato-unit-8 - $minato-unit-2;
+    height: $minato-unit-8 - $minato-unit-2;
     content: "";
     border-radius: $minato-unit-4;
     background: white;

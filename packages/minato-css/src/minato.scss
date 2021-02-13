@@ -25,6 +25,8 @@
 @import './breakpoint.scss';
 
 html {
+  --minato-shadow-color: #dad1ec;
+
   font-family: 'Manrope', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: $minato-typo-primary;

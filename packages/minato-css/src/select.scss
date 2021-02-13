@@ -23,6 +23,10 @@
   &:focus {
     outline: none;
   }
+
+  &:not(:disabled):not([data-no-raise]) {
+    box-shadow: 0 $minato-unit-1 $minato-unit-1 0 $minato-card-shadow;
+  }
 }
 
 .mcss-selector {
