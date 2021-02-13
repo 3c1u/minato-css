@@ -5,11 +5,7 @@ const dispatch = createEventDispatcher()
 export let checked: boolean = false
 export let disabled: boolean = false
 export let name: string | undefined = undefined
-export let value: string | undefined = undefined
-
-const handleChange = () => {
-  dispatch('change', checked)
-}
+export let value: string | number | undefined = undefined
 </script>
 
 <label class="mcss-checkbox-container">
@@ -20,7 +16,7 @@ const handleChange = () => {
     {disabled}
     {name}
     {value}
-    on:change={handleChange}
+    on:change
   />
   <span class="mcss-checkbox-label"><slot /></span>
 </label>

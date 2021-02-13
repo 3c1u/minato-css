@@ -12,12 +12,13 @@ export let value: number | undefined = undefined
 
 $: checked = group === value
 
-const { getName } = getContext(radioGroupNameKey) ?? {}
+const { getName, change } = getContext(radioGroupNameKey) ?? {}
 $: computedName = getName ? getName() : name
 
 const handleChange = () => {
   group = value
   dispatch('change', checked)
+  change(value)
 }
 </script>
 

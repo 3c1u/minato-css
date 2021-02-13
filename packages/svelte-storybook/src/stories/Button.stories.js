@@ -1,4 +1,4 @@
-import Button from '../view/ButtonView.svelte'
+import Button from '../view/Button.svelte'
 
 export default {
   title: 'Controls/Button',

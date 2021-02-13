@@ -10,10 +10,6 @@ export let danger: boolean | null = null
 export let raise: boolean = true
 export let disabled: boolean = false
 export let type: 'button' | 'reset' | 'submit' = 'button'
-
-const click = () => {
-  dispatch('click')
-}
 </script>
 
 <Button {primary} {danger} {raise} {disabled} {type} on:click>{label}</Button>

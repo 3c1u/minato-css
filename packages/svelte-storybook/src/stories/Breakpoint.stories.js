@@ -6,7 +6,7 @@ export default {
   argTypes: {},
 }
 
-const Template = ({ onClick, ...args }) => ({
+const Template = ({ ...args }) => ({
   Component: Breakpoint,
   props: args,
 })

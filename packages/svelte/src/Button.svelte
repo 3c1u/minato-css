@@ -7,10 +7,6 @@ export let danger: boolean | null = null
 export let raise: boolean = true
 export let disabled: boolean = false
 export let type: 'button' | 'reset' | 'submit' = 'button'
-
-const handleClick = () => {
-  dispatch('click')
-}
 </script>
 
 <button
@@ -20,7 +16,7 @@ const handleClick = () => {
   data-no-raise={raise ? undefined : true}
   {type}
   {disabled}
-  on:click={handleClick}
+  on:click
 >
   <slot />
 </button>
