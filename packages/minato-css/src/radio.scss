@@ -11,6 +11,12 @@
 @import "./variables.scss";
 @import "./utils.scss";
 
+.mcss-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: $minato-unit-2;
+}
+
 .mcss-radio-container {
   display: flex;
   align-items: center;

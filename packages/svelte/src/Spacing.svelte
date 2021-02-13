@@ -1,1 +1,3 @@
-<div class="mcss-spacing"></div>
+<div class="mcss-spacing">
+    <slot></slot>
+</div>

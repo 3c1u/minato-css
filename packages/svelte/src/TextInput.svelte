@@ -1,8 +1,9 @@
 <script lang="ts">
-export let type: string = 'text'
 export let placeholder: string | undefined = undefined
+export let name: string | undefined = undefined
+export let value: string = ''
 </script>
 
 <div class="mcss-text-input-container">
-  <input type={type} placeholder={placeholder} class="mcss-text-input" />
+  <input type='text' {placeholder} {name} class="mcss-text-input" bind:value />
 </div>

@@ -5,7 +5,8 @@ const dispatch = createEventDispatcher()
 export let primary: boolean | null = null
 export let danger: boolean | null = null
 export let raise: boolean = true
-export let type: string = 'button'
+export let disabled: boolean = false
+export let type: ButtonType = 'button'
 
 const handleClick = () => {
   dispatch('click')
@@ -17,7 +18,8 @@ const handleClick = () => {
   data-danger={danger}
   data-primary={primary}
   data-no-raise={raise ? undefined : true}
-  type={type}
+  {type}
+  {disabled}
   on:click={handleClick}
 >
   <slot />
