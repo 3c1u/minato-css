@@ -5,6 +5,10 @@
 <p align="center"><em>comes with tons of <b>"excessive"</b> animations!</em>
 </p>
 
+<p align="center">
+<a href="https://minato-css-storybook.vercel.app/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg"></a>
+</p>
+
 ---
 
 <h1 align="center">Minato.CSS</h1>
