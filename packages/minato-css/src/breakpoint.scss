@@ -1,0 +1,46 @@
+/**
+ * minato.css
+ *
+ * @author    Hikaru Terazono (3c1u) <3c1u@tohkani.com>
+ * @copyright Copyright 2021 Hikaru Terazono. All rights reserved.
+ *
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
+
+@mixin bp($name, $bp) {
+  @media (min-width: #{$bp}) {
+    .mcss-bp-hide-#{$name} {
+      display: none;
+    }
+
+    .mcss-bp-only-#{$name} {
+      display: none;
+    }
+  }
+
+  @media not all and (min-width: #{$bp}) {
+    .mcss-bp-show-#{$name} {
+      display: none;
+    }
+  }
+}
+
+@mixin bponly($name, $bp) {
+  @media not all and (min-width: #{$bp}) {
+    .mcss-bp-only-#{$name} {
+      display: none;
+    }
+  }
+}
+
+@include bp('sm', $minato-bp-sm);
+@include bp('md', $minato-bp-md);
+@include bp('lg', $minato-bp-lg);
+@include bp('xl', $minato-bp-xl);
+@include bp('2x', $minato-bp-2x);
+
+@include bponly('md', $minato-bp-sm);
+@include bponly('lg', $minato-bp-md);
+@include bponly('xl', $minato-bp-lg);
+@include bponly('2x', $minato-bp-xl);
