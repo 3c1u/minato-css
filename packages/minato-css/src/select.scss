@@ -8,9 +8,6 @@
  * http://opensource.org/licenses/mit-license.php
  */
 
-@import "./variables.scss";
-@import "./utils.scss";
-
 .mcss-select {
   @include input-common;
 
@@ -29,8 +26,14 @@
 }
 
 .mcss-selector {
+  @include glow-before-h-fw;
+
   position: relative;
   margin: $minato-unit-3;
+
+  &::before {
+    border-radius: $minato-unit-1h;
+  }
 
   &::after {
     position: absolute;
@@ -46,6 +49,4 @@
     transform: scaleX(2.5);
     pointer-events: none;
   }
-
-  @include glow-before-h-fw;
 }

@@ -98,7 +98,7 @@
 @mixin glow-before-h-fw {
   @include glow-before;
 
-  &:hover::before {
+  &:not([data-disabled]):hover::before {
     opacity: 0.5;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
   }
