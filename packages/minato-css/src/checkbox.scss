@@ -60,6 +60,7 @@
 
 .mcss-checkbox {
   @include input-common;
+  @include glow-before-fv;
 
   position: relative;
   width: $minato-unit-5;
@@ -68,6 +69,10 @@
   border: 1px solid $minato-check-border;
   border-radius: $minato-unit-1;
   transition: all 200ms ease;
+
+  &::before {
+    border-radius: $minato-unit-1;
+  }
 
   &::after {
     position: absolute;
@@ -101,6 +106,4 @@
     opacity: 0.8;
     transform: scale(0.9);
   }
-
-  @include glow-before-fv;
 }

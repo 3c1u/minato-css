@@ -44,7 +44,7 @@
 }
 
 @mixin glow-before {
-  --minato-glow-color: #{$minato-primary};
+  --minato-glow-color: #{$minato-focus-ring-color};
 
   &::before {
     position: absolute;
@@ -54,7 +54,6 @@
     left: 0;
     pointer-events: none;
     content: "";
-    border-radius: $minato-unit-1h;
     opacity: 0;
     transition-timing-function: ease;
     transition-duration: 200ms;
@@ -68,6 +67,7 @@
   &:not(:disabled):focus-visible::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
+    animation: 1s linear infinite mcss-focusring-animation;
   }
 }
 
@@ -91,6 +91,7 @@
   &:not(:disabled):focus-visible::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
+    animation: 1s linear infinite mcss-focusring-animation;
   }
 }
 
@@ -105,5 +106,20 @@
   &:not([data-disabled]):focus-within::before {
     opacity: 1;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 var(--minato-glow-color);
+    animation: 5s ease infinite mcss-focusring-animation;
+  }
+}
+
+@keyframes mcss-focusring-animation {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+  
+  100% {
+    opacity: 0.6;
   }
 }

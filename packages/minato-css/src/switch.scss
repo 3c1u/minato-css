@@ -27,6 +27,7 @@
 
 .mcss-switch {
   @include input-common;
+  @include glow-before-fv;
 
   position: relative;
   width: $minato-unit-14 + $minato-unit-2;
@@ -38,6 +39,10 @@
 
   &:disabled {
     filter: grayscale(70%);
+  }
+
+  &::before {
+    border-radius: $minato-unit-8 + $minato-unit-2;
   }
 
   &::after {
@@ -67,25 +72,5 @@
   &:active:not(:disabled) {
     opacity: 0.8;
     transform: scale(0.95);
-  }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    content: "";
-    border-radius: $minato-unit-4;
-    opacity: 0;
-    transition-timing-function: ease;
-    transition-duration: 200ms;
-    transition-property: box-shadow, opacity;
-  }
-
-  &:focus-visible::before {
-    opacity: 1;
-    box-shadow: 0 0 $minato-unit-p $minato-unit-1 $minato-primary;
   }
 }

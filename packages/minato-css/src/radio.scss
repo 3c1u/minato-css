@@ -33,6 +33,7 @@
 
 .mcss-radio {
   @include input-common;
+  @include glow-before-fv;
 
   position: relative;
   width: $minato-unit-5;
@@ -44,6 +45,10 @@
 
   &:focus {
     outline: none;
+  }
+
+  &::before {
+    border-radius: $minato-unit-3;
   }
 
   &::after {
@@ -77,25 +82,5 @@
   &:active:not(:checked):not(:disabled) {
     opacity: 0.8;
     transform: scale(0.9);
-  }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    content: "";
-    border-radius: 10px;
-    opacity: 0;
-    transition-timing-function: ease;
-    transition-duration: 200ms;
-    transition-property: box-shadow, opacity;
-  }
-
-  &:focus-visible::before {
-    opacity: 1;
-    box-shadow: 0 0 1px 3px $minato-primary;
   }
 }

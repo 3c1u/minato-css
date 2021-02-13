@@ -45,6 +45,10 @@
   transition-property: transform, opacity;
   color: $minato-typo-primary;
 
+  &::before {
+    border-radius: $minato-unit-1h;
+  }
+
   &:disabled {
     background-color: $minato-button-disabled;
   }

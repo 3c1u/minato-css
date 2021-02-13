@@ -8,11 +8,12 @@
  * http://opensource.org/licenses/mit-license.php
  */
 
-$minato-background-color: #ffffff;
+$minato-background-color: #fcfbff;
 $minato-typo-primary: #556;
 $minato-typo-secondary: #888;
 $minato-typo-tertiary: #aab;
-$minato-primary: #4f86ef;
+$minato-primary: #7b5ec6;
+$minato-focus-ring-color:#ab92e1;
 $minato-button-disabled: #d0d4df;
 $minato-button-plain-border: #d0d4df;
 $minato-primary-contrast: #fff;
@@ -25,8 +26,8 @@ $minato-card-shadow: var(--minato-shadow-color);
 $minato-card-bg: #f4f6fa;
 $minato-switch-off: #aab;
 $minato-switch-border: #aaa;
-$minato-switch-on: #3e5;
-$minato-switch-on-glow: rgba(#7fb, 0.5);
+$minato-switch-on: #ab92e1;
+$minato-switch-on-glow: rgba(#e4d9ff, 0.5);
 $minato-bounce: cubic-bezier(0.29, 1.86, 0.2, 0.9);
 
 $minato-unit-auto: auto;
@@ -52,5 +53,5 @@ $minato-bp-xl: 1280px;
 $minato-bp-2x: 1536px;
 
 html {
-  --minato-shadow-color: #e1e2ee;
+  --minato-shadow-color: #dad1ec;
 }
