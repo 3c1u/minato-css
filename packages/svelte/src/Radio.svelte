@@ -6,7 +6,7 @@ const radioGroupNameKey = 'minato-svelte:radio-group-name'
 
 export let checked: boolean = false
 export let disabled: boolean = false
-export let name: string | undefined= undefined
+export let name: string | undefined = undefined
 export let group: number | undefined = undefined
 export let value: number | undefined = undefined
 

@@ -5,6 +5,7 @@
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "homepage": "",
   "license": "MIT",
+  "private": true,
   "main": "public/index.html",
   "directories": {
     "lib": "lib",

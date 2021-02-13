@@ -74,7 +74,7 @@
 @mixin glow-before-h-fv {
   @include glow-before;
 
-  &:hover::before {
+  &:not(:disabled):hover::before {
     opacity: 0.5;
     box-shadow: 0 0 $minato-unit-p $minato-unit-1 $minato-primary;
   }

@@ -1,0 +1,38 @@
+{
+  "name": "@minato-css/svelte-storybook",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Hikaru Terazono <3c1u@tohkani.com> (3c1u)",
+  "homepage": "https://github.com/3c1u/minato-css#readme",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3c1u/minato-css.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "storybook": "start-storybook -p 6006 -s ../../",
+    "build-storybook": "build-storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/3c1u/minato-css/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/svelte": "^6.1.17",
+    "@storybook/theming": "^6.1.17",
+    "babel-loader": "^8.2.2",
+    "sass": "^1.32.7",
+    "svelte": "^3.32.3",
+    "svelte-loader": "^3.0.0",
+    "svelte-preprocess": "^4.6.8",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@minato-css/svelte": "^0.1.0"
+  }
+}
