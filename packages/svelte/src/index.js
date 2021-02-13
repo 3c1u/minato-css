@@ -7,6 +7,7 @@ import CheckboxGroup from './CheckboxGroup.svelte'
 import Radio from './Radio.svelte'
 import RadioGroup from './RadioGroup.svelte'
 import Spacing from './Spacing.svelte'
+import Switch from './Switch.svelte'
 import TextInput from './TextInput.svelte'
 
-export { Button, ButtonGroup, Card, Checkbox, CheckboxGroup, Radio, RadioGroup, Spacing, TextInput }
+export { Button, ButtonGroup, Card, Checkbox, CheckboxGroup, Radio, RadioGroup, Spacing, Switch, TextInput }

@@ -8,7 +8,7 @@ export let name: string | undefined = undefined
 export let value: string | number | undefined = undefined
 </script>
 
-<label class="mcss-checkbox-container">
-  <input class="mcss-checkbox" type="checkbox" bind:checked {disabled} {name} {value} on:change />
-  <span class="mcss-checkbox-label" data-disabled={disabled ? true : undefined}><slot /></span>
+<label class="mcss-switch-container">
+  <input class="mcss-switch" type="checkbox" bind:checked {disabled} {name} {value} on:change />
+  <span class="mcss-switch-label" data-disabled={disabled ? true : undefined}><slot /></span>
 </label>

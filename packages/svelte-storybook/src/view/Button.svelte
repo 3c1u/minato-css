@@ -2,8 +2,6 @@
 import { createEventDispatcher } from 'svelte'
 import { Button } from '@minato-css/svelte'
 
-const dispatch = createEventDispatcher()
-
 export let label: string = ''
 export let primary: boolean | null = null
 export let danger: boolean | null = null

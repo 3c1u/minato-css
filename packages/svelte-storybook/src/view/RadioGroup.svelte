@@ -2,8 +2,6 @@
 import { createEventDispatcher } from 'svelte'
 import { RadioGroup, Radio } from '@minato-css/svelte'
 
-const dispatch = createEventDispatcher()
-
 export let name: string = 'nukitashi'
 let radioGroup: number = 10
 </script>
@@ -12,4 +10,5 @@ let radioGroup: number = 10
   <Radio bind:group={radioGroup} value={10}>Katagiri Nanase</Radio>
   <Radio bind:group={radioGroup} value={20}>Watarai Hinami</Radio>
   <Radio bind:group={radioGroup} value={30}>Hotori Misaki</Radio>
+  <Radio bind:group={radioGroup} value={40} disabled>Kotoyose Fumino</Radio>
 </RadioGroup>
