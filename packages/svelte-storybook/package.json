@@ -14,7 +14,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "storybook": "start-storybook -p 6006 -s ../../",
     "build-storybook": "build-storybook",
-    "prepare": "yarn workspaces run prepare"
+    "prepare": "yarn workspace @minato-css/minato-css run prepare"
   },
   "bugs": {
     "url": "https://github.com/3c1u/minato-css/issues"
