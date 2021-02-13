@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 676 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-72.1375,-83.7639)">
+        <g transform="matrix(1.50957,0,0,1.50957,-154.524,-34.584)">
+            <g transform="matrix(1,0,0,1,163.924,-227.57)">
+                <text x="149.756px" y="357.377px" style="font-family:'Raleway-ExtraBold', 'Raleway', sans-serif;font-weight:800;font-size:72px;fill:rgb(171,146,225);">MINATO</text>
+            </g>
+            <g transform="matrix(1,0,0,1,164.932,-172.305)">
+                <text x="149.756px" y="357.377px" style="font-family:'Raleway-ExtraBold', 'Raleway', sans-serif;font-weight:800;font-size:72px;fill:rgb(171,146,225);">.CSS</text>
+            </g>
+            <g transform="matrix(-1.01576,1.01576,-1.01576,-1.01576,658.625,380.534)">
+                <path d="M104.741,300C104.741,300 75.321,337.975 75.321,354.249C75.321,370.487 88.504,383.669 104.741,383.669C120.978,383.669 134.161,370.487 134.161,354.249C134.161,337.975 104.741,300 104.741,300Z" style="fill:rgb(171,146,225);"/>
+            </g>
+            <g transform="matrix(-1.01576,1.01576,-1.01576,-1.01576,707.303,380.534)">
+                <path d="M104.741,300C104.741,300 75.321,337.975 75.321,354.249C75.321,370.487 88.504,383.669 104.741,383.669C120.978,383.669 134.161,370.487 134.161,354.249C134.161,337.975 104.741,300 104.741,300Z" style="fill:rgb(171,146,225);"/>
+            </g>
+            <g transform="matrix(-1.01576,1.01576,-1.01576,-1.01576,658.625,380.534)">
+                <clipPath id="_clip1">
+                    <path d="M80.779,276.038C80.779,276.038 51.359,314.013 51.359,330.288C51.359,346.525 64.542,359.708 80.779,359.708C97.016,359.708 110.199,346.525 110.199,330.288C110.199,314.013 80.779,276.038 80.779,276.038Z"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <path d="M104.741,300C104.741,300 75.321,337.975 75.321,354.249C75.321,370.487 88.504,383.669 104.741,383.669C120.978,383.669 134.161,370.487 134.161,354.249C134.161,337.975 104.741,300 104.741,300Z" style="fill:rgb(123,94,198);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
