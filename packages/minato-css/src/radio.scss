@@ -24,6 +24,8 @@
 }
 
 .mcss-radio-label {
+  @include label-common;
+
   margin-left: $minato-unit-3;
   user-select: none;
   color: $minato-typo-primary;

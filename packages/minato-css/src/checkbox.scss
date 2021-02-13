@@ -51,6 +51,8 @@
 }
 
 .mcss-checkbox-label {
+  @include label-common;
+
   margin-left: $minato-unit-3;
   user-select: none;
   color: $minato-typo-primary;
@@ -66,10 +68,6 @@
   border: 1px solid $minato-check-border;
   border-radius: $minato-unit-1;
   transition: all 200ms ease;
-
-  &:not(:disabled) {
-    box-shadow: 0 3px 3px 0 $minato-card-shadow;
-  }
 
   &::after {
     position: absolute;

@@ -8,8 +8,8 @@
  * http://opensource.org/licenses/mit-license.php
  */
 
-@import "./variables.scss";
-@import "./utils.scss";
+@import './variables.scss';
+@import './utils.scss';
 
 .mcss-button-group {
   display: flex;
@@ -45,17 +45,32 @@
   transition-property: transform, opacity;
   color: $minato-typo-primary;
 
+  &:disabled {
+    background-color: $minato-button-disabled;
+  }
+
+  &:not(:disabled):not([data-no-raise]) {
+    box-shadow: 0 $minato-unit-1 $minato-unit-1 0 $minato-card-shadow,
+      0 $minato-unit-2 $minato-unit-3 0 $minato-card-shadow;
+  }
+
+  &[data-no-raise] {
+    border: 1px solid $minato-button-plain-border;
+  }
+
   &:active:not(:disabled) {
     transform: scale(0.98);
     opacity: 0.9;
   }
 
   &[data-primary] {
+    border: none;
     background: $minato-primary;
     color: $minato-primary-contrast;
   }
 
   &[data-danger] {
+    border: none;
     background: $minato-danger;
     color: $minato-danger-contrast;
     --minato-glow-color: #{$minato-danger};

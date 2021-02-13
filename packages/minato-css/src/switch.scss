@@ -18,7 +18,9 @@
 }
 
 .mcss-switch-label {
-  margin-left: $minato-unit-3;
+  @include label-common;
+
+  margin-left: $minato-unit-4;
   user-select: none;
   color: $minato-typo-primary;
 }

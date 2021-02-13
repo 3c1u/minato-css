@@ -8,11 +8,13 @@
  * http://opensource.org/licenses/mit-license.php
  */
 
-$minato-background-color: #dddfe5;
+$minato-background-color: #ffffff;
 $minato-typo-primary: #556;
 $minato-typo-secondary: #888;
 $minato-typo-tertiary: #aab;
 $minato-primary: #4f86ef;
+$minato-button-disabled: #d0d4df;
+$minato-button-plain-border: #d0d4df;
 $minato-primary-contrast: #fff;
 $minato-danger: #fc197c;
 $minato-danger-contrast: #fff;
@@ -48,3 +50,7 @@ $minato-bp-md: 768px;
 $minato-bp-lg: 1024px;
 $minato-bp-xl: 1280px;
 $minato-bp-2x: 1536px;
+
+html {
+  --minato-shadow-color: #e1e2ee;
+}
