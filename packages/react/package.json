@@ -14,6 +14,7 @@
     "url": "git+https://github.com/3c1u/minato-css.git"
   },
   "scripts": {
+    "prepare": "yarn build",
     "build": "rollup -c"
   },
   "bugs": {
@@ -28,10 +29,8 @@
     "typescript": "^4.1.5"
   },
   "peerDependencies": {
+    "@minato-css/minato-css": "^0.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  },
-  "dependencies": {
-    "@minato-css/minato-css": "^0.1.0"
   }
 }
