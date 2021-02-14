@@ -1,6 +1,6 @@
 {
   "name": "@minato-css/svelte",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "Svelte component for minato.css.",
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "homepage": "https://github.com/3c1u/minato-css#readme",
@@ -31,7 +31,7 @@
     "typescript": "^4.1.5"
   },
   "peerDependencies": {
-    "svelte": "^3.32.3",
-    "@minato-css/minato-css": "^0.1.0"
+    "@minato-css/minato-css": "^0.1.0",
+    "svelte": "^3.32.3"
   }
 }

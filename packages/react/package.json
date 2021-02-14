@@ -1,6 +1,6 @@
 {
   "name": "@minato-css/react",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "React binding for Minato CSS",
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "homepage": "https://github.com/3c1u/minato-css#readme",
