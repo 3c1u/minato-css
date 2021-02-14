@@ -34,7 +34,7 @@
     "typescript": "^4.1.5"
   },
   "dependencies": {
-    "@minato-css/minato-css": "*",
-    "@minato-css/svelte": "*"
+    "@minato-css/minato-css": "^0.1.0-alpha.2",
+    "@minato-css/svelte": "^0.1.0-alpha.2"
   }
 }

@@ -1,8 +1,8 @@
-import rollupTypescript from '@rollup/plugin-typescript'
+import rollupTypescript from 'rollup-plugin-typescript2'
 
 export default {
   input: 'src/index.ts',
-  plugins: [rollupTypescript({ jsx: 'react' })],
+  plugins: [rollupTypescript({})],
   output: {
     file: 'dist/index.js',
     format: 'esm',
