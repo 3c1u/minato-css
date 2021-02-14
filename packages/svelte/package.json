@@ -1,6 +1,6 @@
 {
   "name": "@minato-css/svelte",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Svelte component for minato.css.",
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "homepage": "https://github.com/3c1u/minato-css#readme",
