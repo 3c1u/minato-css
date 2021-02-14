@@ -1,6 +1,6 @@
 {
   "name": "@minato-css/root",
-  "version": "0.1.0-0",
+  "version": "0.1.0-alpha.0",
   "description": "Simple CSS form controls",
   "main": "dist/index.css",
   "repository": "https://github.com/3c1u/minato-css",
