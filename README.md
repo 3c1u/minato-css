@@ -13,7 +13,7 @@
 
 <h1 align="center">Minato.CSS</h1>
 
-**[WIP]** Minato.CSS is a CSS UI framework with [Svelte](https://svelte.dev/) binding.
+**[WIP]** Minato.CSS is a CSS UI framework with [React](https://reactjs.org/), [Svelte](https://svelte.dev/) bindings.
 
 ## Goal
 

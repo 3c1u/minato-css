@@ -1,0 +1,37 @@
+{
+  "name": "@minato-css/react",
+  "version": "0.1.0",
+  "description": "React binding for Minato CSS",
+  "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
+  "homepage": "https://github.com/3c1u/minato-css#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3c1u/minato-css.git"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "bugs": {
+    "url": "https://github.com/3c1u/minato-css/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.39.0",
+    "sass": "^1.32.7",
+    "typescript": "^4.1.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "@minato-css/minato-css": "^0.1.0"
+  }
+}
