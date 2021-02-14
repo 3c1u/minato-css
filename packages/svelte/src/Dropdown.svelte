@@ -5,17 +5,14 @@ const dispatch = createEventDispatcher()
 
 export let name: string | undefined = undefined
 export let disabled: boolean = false
-const selectGroupNameKey = 'minato-svelte:select-group-name'
 
-setContext(selectGroupNameKey, {
-  change: (value: number) => {
-    dispatch('change', { value })
-  },
-})
+const handleChange = (event: Event) => {
+  dispatch('change', (event.target as HTMLSelectElement).value)
+}
 </script>
 
 <div class="mcss-selector" data-disabled={disabled ? true : undefined}>
-  <select class="mcss-select" {name} {disabled}>
+  <select class="mcss-select" {name} {disabled} on:change={handleChange}>
     <slot />
   </select>
 </div>
