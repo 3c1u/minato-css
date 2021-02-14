@@ -7,7 +7,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com",
     "access": "public"
   },
   "repository": {
@@ -34,5 +33,5 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "gitHead": "09acaebb51a97499435dc49c8288c550e64f3651"
+  "gitHead": "d92af0fcc6df46d2b76b7a692d2045aa0a5a5bd7"
 }
