@@ -11,6 +11,10 @@
     "src": "src",
     "dist": "dist"
   },
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com",
+    "access": "public"
+  },
   "files": [
     "src",
     "dist",
@@ -41,5 +45,6 @@
     "stylelint": "^13.10.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-scss": "^3.19.0"
-  }
+  },
+  "gitHead": "09acaebb51a97499435dc49c8288c550e64f3651"
 }

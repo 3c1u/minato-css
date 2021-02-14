@@ -13,6 +13,10 @@
   "files": [
     "src"
   ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3c1u/minato-css.git"
@@ -33,5 +37,6 @@
   "peerDependencies": {
     "@minato-css/minato-css": "^0.1.0",
     "svelte": "^3.32.3"
-  }
+  },
+  "gitHead": "09acaebb51a97499435dc49c8288c550e64f3651"
 }

@@ -21,6 +21,7 @@
     "serve": "lerna run --stream --scope @minato-css/minato-css-demo serve",
     "serve:svelte": "lerna run --stream --scope @minato-css/svelte-demo serve",
     "storybook:svelte": "lerna run  --stream --scope @minato-css/svelte-storybook storybook",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "publish:all": "lerna publish --no-private"
   }
 }
