@@ -34,7 +34,7 @@
     "typescript": "^4.1.5"
   },
   "peerDependencies": {
-    "@minato-css/minato-css": "^0.1.0",
+    "@minato-css/minato-css": "*",
     "svelte": "^3.32.3"
   },
   "gitHead": "d92af0fcc6df46d2b76b7a692d2045aa0a5a5bd7"
